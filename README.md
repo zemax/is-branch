@@ -1,4 +1,4 @@
-# is-branch
+# is-git-branch
 
 A node CLI tool to check the current git branch.
 
@@ -8,15 +8,15 @@ I use it in an npm script, before deploying with _git ftp_.
 # Install
 
 ```bash
-npm install is-branch
+npm install is-git-branch
 ```
 
 # Use
 
 ```bash
-is-branch master && npm run deloy:production
+is-git-branch master && npm run deloy:production
 ```
 
 ```bash
-is-branch preprod,master && npm run deloy:preproduction
+is-git-branch preprod,master && npm run deloy:preproduction
 ```
