@@ -1,0 +1,20 @@
+{
+  "name": "is-git-branch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "is-branch": "./index.js"
+  },
+  "scripts": {
+    "test:master": "node index.js master && echo \"Greaaat\"",
+    "test:multiple": "node index.js dev,master && echo \"Greaaat\"",
+    "test:dev": "node index.js dev && echo \"Succeeding is a failure\"",
+    "test": "npm run test:master ; npm run test:multiple"
+  },
+  "author": "Maxime Cousinou",
+  "license": "ISC",
+  "dependencies": {
+    "current-git-branch": "^1.1.0"
+  }
+}
